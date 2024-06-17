@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper{
+  max-height: 500px;
+}
+.cl-avatarBox{
+  width: 40px;
+  height: 40px;
+}
