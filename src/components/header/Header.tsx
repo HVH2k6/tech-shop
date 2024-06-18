@@ -12,7 +12,7 @@ const Header = () => {
     },
     {
       title: 'Danh sách sản phẩm',
-      path: '/products',
+      path: '/product',
     },
     {
       title: 'Phân loại',
@@ -56,7 +56,7 @@ const Header = () => {
         <div className="flex items-center gap-x-6">
           {isSignedIn ?(
             <>
-              <UserButton />
+              <UserButton showName={true} />
             </>
           ):(
             <>

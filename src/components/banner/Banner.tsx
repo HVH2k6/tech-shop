@@ -2,8 +2,11 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
 import '../../app/globals.scss';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import IBanner from '@/type/back-end';
 import Link from 'next/link';
 interface IProps {
@@ -19,17 +22,28 @@ const Banner = (props: IProps) => {
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
       >
         {Array.isArray(data)
           ? data.map((item: any, index: any) => (
               <SwiperSlide key={index}>
-                <Link className='block' href={`/products/${item.slug}`}>
-                  <img
-                    src={item.image_product} 
-                    alt=''
-                    className='w-full h-full object-cover'
-                  />
-                </Link>
+                <div>
+                  <Link className='block' href={`/products/${item.slug}`}>
+                    <img
+                      src={item.image_product}
+                      alt=''
+                      className='w-full h-full object-cover'
+                    />
+                  </Link>
+                </div>
               </SwiperSlide>
             ))
           : null}
