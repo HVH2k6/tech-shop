@@ -2,7 +2,8 @@ import Banner from '@/components/banner/Banner';
 
 import { API_URL } from '@/utils/constants';
 import axios from 'axios';
-import { useState } from 'react';
+
+
 
 export default async function Home() {
   const apiBaner = API_URL.Banner_url;
@@ -12,7 +13,7 @@ export default async function Home() {
   
 
   return (
-    <div className=''>
+    <div className='container'>
       <Banner data={data ? data : []}></Banner>
 
     </div>

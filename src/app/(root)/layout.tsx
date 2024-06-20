@@ -1,8 +1,8 @@
 import Header from '@/components/header/Header';
 import Footer from '@/components/header/footer/Footer';
-import type { Metadata } from 'next';
 
-export default function RootLayout({
+
+export default function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -10,7 +10,7 @@ export default function RootLayout({
   return (
     <>
       <Header></Header>
-      <div className='container'>{children}</div>
+      <div className=''>{children}</div>
       <Footer></Footer>
     </>
   );

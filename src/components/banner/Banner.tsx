@@ -36,7 +36,7 @@ const Banner = (props: IProps) => {
           ? data.map((item: any, index: any) => (
               <SwiperSlide key={index}>
                 <div>
-                  <Link className='block' href={`/products/${item.slug}`}>
+                  <Link className='block' href={`/product/${item.slug}`}>
                     <img
                       src={item.image_product}
                       alt=''

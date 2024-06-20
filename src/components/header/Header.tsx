@@ -28,7 +28,7 @@ const Header = () => {
     },
   ];
   return (
-    <header className='shadow-sm py-3'>
+    <header className='shadow-md py-3'>
       <div className='container flex item justify-between'>
         <div className=''>
           <svg

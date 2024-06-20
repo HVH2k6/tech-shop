@@ -23,4 +23,20 @@ export default interface IProduct {
   slug: string;
 
   banner: boolean;
+  details: [
+    {
+      color: string;
+      size: string;
+      price: number;
+      _id: string;
+    }
+  ];
+}
+export default interface IUser {
+  id: string;
+  banned: boolean;
+  username: string;
+  firstName: string;
+  lastName: string;
+  imageUrl: string;
 }
