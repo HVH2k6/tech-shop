@@ -11,7 +11,7 @@ const ProductPage = async () => {
     const data = res.data;
     
     return (
-        <div>
+        <div className='container py-20'>
             <ListProduct dataCard={data ? data : []}></ListProduct>
         </div>
     );

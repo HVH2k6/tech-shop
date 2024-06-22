@@ -21,6 +21,7 @@
     "react-dom": "^18",
     "react-hook-form": "^7.52.0",
     "react-stars": "^2.2.5",
+    "react-toastify": "^10.0.5",
     "sass": "^1.77.5",
     "socket.io": "^4.7.5",
     "socket.io-client": "^4.7.5",

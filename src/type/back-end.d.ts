@@ -21,7 +21,7 @@ export default interface IProduct {
   quantity: number;
   description: string;
   slug: string;
-
+  name_category: string;
   banner: boolean;
   details: [
     {
@@ -30,6 +30,9 @@ export default interface IProduct {
       price: number;
       _id: string;
     }
+  ];
+  image_product_sub: [
+    string
   ];
 }
 export default interface IUser {

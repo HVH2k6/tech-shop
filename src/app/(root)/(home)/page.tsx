@@ -13,7 +13,7 @@ export default async function Home() {
   
 
   return (
-    <div className='container'>
+    <div className='container py-20'>
       <Banner data={data ? data : []}></Banner>
 
     </div>
